@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeMate</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="paymenr.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="div">
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid p-3 py-1 px-md-5">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <div class="d-flex align-items-center justify-content-end px-2 py-2" style="background: rgba(0, 0, 10, 0.1); border-radius: 50px;">
+                    <img src="https://i.pinimg.com/736x/dc/53/50/dc5350243970437d9fff2c8db3a9975b.jpg" style="width: 50px; mix-blend-mode: multiply;" alt="">
+                    <h5 class="fw-bold mt-1 px-2">ShoeMate</h5>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5 justify-content-around">
+                    <li class="nav-item d-none d-md-block" style="border-left: 1px solid #aaa; margin-left: 40px;"></li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" aria-current="page" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="galery.html">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-start gap-md-4">
+                    <a class="nav-link me-2" href="addtocart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a class="nav-link me-2" href="chat.html">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <div class="btn-group">
+                        <a
+                            href="#"
+                            class="nav-link me-2 dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li>
+                                <a class="dropdown-item fs-5 fw-bold" href="#">Katherine Grace</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="info.html">
+                                    <i class="me-3 text-muted fas fa-user"></i>
+                                    Personal info
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="security.html">
+                                    <i class="me-3 text-muted fas fa-lock"></i>
+                                    Login and security
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="me-3 text-muted fa-regular fa-credit-card"></i>
+                                    My payments
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="me-3 text-muted fa-regular fa-lightbulb"></i>
+                                    Dark theme
+                                </a>
+                                <div class="form-check form-switch">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        role="switch"
+                                        id="darkmode"
+                                    >
+                                    <script>
+                                    let darkmode = document.querySelector('#darkmode')
+                                    let navbar = document.querySelector('.navbar')
+                                    let body = document.body
+                                    darkmode.addEventListener('change', () => {
+                                        body.classList.toggle('bg-dark')
+                                        body.classList.toggle('text-white')
+                                        navbar.classList.toggle('bg-dark')
+                                        navbar.classList.toggle('navbar-dark')
+                                        
+                                    })
+                                    </script>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="login.html">
+                                    <i class="me-3 text-muted fa-solid fa-arrow-right-from-bracket"></i>
+                                    Log Out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+        </div>
+        <div class="div-16">
+          <div class="div-17">
+            <div class="div-18">My payments</div>
+            <div class="div-19">Credit card</div>
+            <div class="div-20">
+              <div class="div-21">
+                <div class="div-22">Visa ••••••9999</div>
+                <div class="div-23">Expiration: 02/2024</div>
+              </div>
+              <div class="div-24">Add payment method</div>
+            </div>
+            <div class="div-25">
+              <div class="div-26">Add new credit card</div>
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7e347642d7636ce5a91d7ad06c546f38d22f48a8ee1bdc80e874c58eb6f52c1?"
+                class="img-5"
+              />
+            </div>
+            <div class="div-27">card number</div>
+            <div class="div-28">
+              <div class="div-29">
+                <div class="div-30">
+                  <div class="div-31">9224 0000 1111 3333</div>
+                  <div class="div-32"></div>
+                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/878d0f34e6a640eb4c76dd9415703532ea0e7b56b48ed7e31bd0382107fe6b08?"
+                  class="img-6"
+                />
+              </div>
+            </div>
+            <div class="div-33">card holder</div>
+            <div class="div-34">PHAM TRAN LAN CAM NGOC</div>
+            <div class="div-35">
+              <div class="div-36">
+                <div class="div-37">EXPIRATION DATE</div>
+                <div class="div-38">MM / YY</div>
+              </div>
+              <div class="div-39">
+                <div class="div-40">CVC</div>
+                <div class="div-41"></div>
+              </div>
+            </div>
+            <div class="div-42">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/71b270b058e5d3230c415806bc92b00b9dad1fb46b4473919b96da2d587af315?"
+                class="img-7"
+              />
+              <div class="div-43">
+                <a href="pay&confirm.html" class="save-card-link">Save Card</a>
+              </div>
+              
+            </div>
+            <div class="div-44"></div>
+            <div class="div-45">Coupons</div>
+            <div class="div-46">
+              <div class="div-47">
+                <div class="div-48">
+                  <div class="div-49">Coupons</div>
+                  <div class="div-50">No coupon added</div>
+                </div>
+                <div class="div-51">Add</div>
+              </div>
+              <div class="div-52"></div>
+              <div class="div-53">
+                <div class="div-54">
+                  <div class="div-55">Gift credit</div>
+                  <div class="div-56">No gift credit added</div>
+                </div>
+                <div class="div-57">Add</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-58"></div>
+        <div class="div-59">
+          <div class="div-60">
+            <div class="div-61">
+              <div class="column">
+                <div class="div-62">
+                  <div class="div-63">
+                    <div class="column-2">
+                      <div class="div-64">
+                        <div class="div-65">ShoeMate</div>
+                        <div class="div-66">Contact us</div>
+                        <div class="div-67">ShoeMate@gmail.com</div>
+                        <div class="div-68">+1-2345-6789</div>
+                        <div class="div-69">123 Ave, New York, USA</div>
+                        <div class="div-70">
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/06fbdf017488b277e5f2ba4e28f808e9756dd6e71c4f3b0cff27c8c0a0b27a2c?"
+                            class="img-8"
+                          />
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4bbaecdb317daf6de3e5584f338b901fa97b81edaf2e13f97c80d773c195ff00?"
+                            class="img-9"
+                          />
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b5c036546ac7d96b38cb88cc95ddeaf30e41c2914dab9f131efc79c3f4669fcf?"
+                            class="img-10"
+                          />
+                          <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4b2f52e60cc49778b1d966d4e4a061da3dcae9fe1e0c2c2ae5c6e70948e4928?"
+                            class="img-11"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-3">
+                      <div class="div-71">
+                        <div class="div-72">Get Help</div>
+                        <div class="div-73">Order Status</div>
+                        <div class="div-74">Deivery</div>
+                        <div class="div-75">Returns</div>
+                        <div class="div-76">Payment Options</div>
+                        <div class="div-77">Refunds</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column-4">
+                <div class="div-78">
+                  <div class="div-79">
+                    <div class="column-5">
+                      <div class="div-80">
+                        <div class="div-81">About</div>
+                        <div class="div-82">
+                          <a
+                            href="https://www.tobys.com/pages/about-us"
+                            target="_blank"
+                          >
+                            Our Story
+                          </a>
+                        </div>
+                        <div class="div-83">
+                          <a
+                            href="https://www.tobys.com/pages/contact-us"
+                            target="_blank"
+                          >
+                            Contact Us
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-6">
+                      <div class="div-84">
+                        <div class="div-85">Get the app</div>
+                        <div class="div-86">
+                          <div class="div-87">
+                            <div class="div-88">
+                              <img
+                                loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/20b1e87577916ff1a5a21386854a1a92e7d74ebb1f660edc8fa46418926c62ca?"
+                                class="img-12"
+                              />
+                              <img
+                                loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/20b1e87577916ff1a5a21386854a1a92e7d74ebb1f660edc8fa46418926c62ca?"
+                                class="img-13"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="div-89">
+                          <div class="div-90">
+                            <div class="div-91">
+                              <img
+                                loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/72dfda53e392a96770d977b6e8edb1c94ff0369003f322567b9216a4e05c2234?"
+                                class="img-14"
+                              />
+                              <img
+                                loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/72dfda53e392a96770d977b6e8edb1c94ff0369003f322567b9216a4e05c2234?"
+                                class="img-15"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

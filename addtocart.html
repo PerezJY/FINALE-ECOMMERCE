@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeMate</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="addtocard.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+          <nav class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid p-3 py-1 px-md-5">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="d-flex align-items-center justify-content-end px-2 py-2" style="background: rgba(0, 0, 10, 0.1); border-radius: 50px;">
+                        <img src="https://i.pinimg.com/736x/dc/53/50/dc5350243970437d9fff2c8db3a9975b.jpg" style="width: 50px; mix-blend-mode: multiply;" alt="">
+                        <h5 class="fw-bold mt-1 px-2">ShoeMate</h5>
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5 justify-content-around">
+                        <li class="nav-item d-none d-md-block" style="border-left: 1px solid #aaa; margin-left: 40px;"></li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active" aria-current="page" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="galery.html">Discover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-start gap-md-4">
+                        <a class="nav-link me-2" href="addtocart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a class="nav-link me-2" href="chat.html">
+                            <i class="fa-solid fa-message"></i>
+                        </a>
+                        <div class="btn-group">
+                            <a
+                                href="#"
+                                class="nav-link me-2 dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li>
+                                    <a class="dropdown-item fs-5 fw-bold" href="#">Katherine Grace</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="info.html">
+                                        <i class="me-3 text-muted fas fa-user"></i>
+                                        Personal info
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="security.html">
+                                        <i class="me-3 text-muted fas fa-lock"></i>
+                                        Login and security
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="me-3 text-muted fa-regular fa-credit-card"></i>
+                                        My payments
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <a class="dropdown-item" href="javascript:void(0)">
+                                        <i class="me-3 text-muted fa-regular fa-lightbulb"></i>
+                                        Dark theme
+                                    </a>
+                                    <div class="form-check form-switch">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            role="switch"
+                                            id="darkmode"
+                                        >
+                                        <script>
+                                        let darkmode = document.querySelector('#darkmode')
+                                        let navbar = document.querySelector('.navbar')
+                                        let body = document.body
+                                        darkmode.addEventListener('change', () => {
+                                            body.classList.toggle('bg-dark')
+                                            body.classList.toggle('text-white')
+                                            navbar.classList.toggle('bg-dark')
+                                            navbar.classList.toggle('navbar-dark')
+                                            
+                                        })
+                                        </script>
+                                    </div>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="me-3 text-muted fa-solid fa-arrow-right-from-bracket"></i>
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <div class="div-16">
+          <div class="div-17">
+            <div class="div-18">Cart</div>
+            <div class="div-19">3</div>
+          </div>
+          <div class="div-20">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3046cc64a54130aa6b5dc2e47b81c24557793cba38e040642d277ee5d7d3985?"
+              class="img-5"
+            />
+            <div class="div-21">
+              <div class="div-22">Item</div>
+              <div class="div-23">
+                <div class="div-24">Price</div>
+                <div class="div-25">Quantity</div>
+                <div class="div-26">Total Price</div>
+              </div>
+            </div>
+            <div class="div-43"></div>
+            <div class="div-44">
+              <div class="div-45">
+                <img
+                  loading="lazy"
+                  src="/image/j4.png"
+                  class="img-6"
+                />
+                <div class="div-46">NEW BALANCE 327 MEN'S SNEAKERS SHOES - GREY</div>
+              </div>
+              <div class="div-31">
+                <div class="div-32">₱6,995.00</div>
+                
+                <div class="div-33">₱6,995.00</div>
+              </div>
+              <div class="div-34">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3e45c390bfe521f961517d3dd2112d887d772cc3bc61e3c36cb6ec83fce5156?"
+                  class="img-8"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d521c02c93d9e922c331539b1b3facf0e2054ad85c18bf853aecda4ddbd33da1?"
+                  class="img-9"
+                />
+              </div>
+            </div>
+            <div class="div-43"></div>
+            <div class="div-44">
+              <div class="div-45">
+                <img
+                  loading="lazy"
+                  src="/image/j66.png"
+                  class="img-10"
+                />
+                <div class="div-46">
+                  NIKE AIR MAX 90 MEN'S SNEAKERS SHOES - NEUTRAL OLIVE
+                </div>
+              </div>
+              <div class="div-39">
+                <div class="div-40">₱6,595.00</div>
+               
+                <div class="div-41">₱6,595.00</div>
+              </div>
+              <div class="div-42">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3e45c390bfe521f961517d3dd2112d887d772cc3bc61e3c36cb6ec83fce5156?"
+                  class="img-12"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d521c02c93d9e922c331539b1b3facf0e2054ad85c18bf853aecda4ddbd33da1?"
+                  class="img-13"
+                />
+              </div>
+            </div>
+            <div class="div-43"></div>
+            <div class="div-44">
+              <div class="div-45">
+                <img
+                  loading="lazy"
+                  src="/image/j1.png"
+                  class="img-14"
+                />
+                <div class="div-46">VANS OLD SKOOL UNISEX SNEAKERS SHOES - NAVY</div>
+              </div>
+              <div class="div-47">
+                <div class="div-48">₱6,795.00</div>
+               
+                <div class="div-49">₱6,795.00</div>
+              </div>
+              <div class="div-50">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3e45c390bfe521f961517d3dd2112d887d772cc3bc61e3c36cb6ec83fce5156?"
+                  class="img-16"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d521c02c93d9e922c331539b1b3facf0e2054ad85c18bf853aecda4ddbd33da1?"
+                  class="img-17"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="div-51">
+            <div class="div-52">
+              <div class="div-53">Promocode</div>
+              <div class="div-54">
+                <div class="div-55">HAPPY</div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef9cc2bf0713d19b34000e367260942c8a04f9a94928b9af0efd6c317ce33f9b?"
+                  class="img-18"
+                />
+              </div>
+              <div class="div-56">Congrats! You have 10% discount</div>
+            </div>
+            <div class="div-57">
+              <div class="div-58">Discount:</div>
+              <div class="div-59">$7.66</div>
+            </div>
+          </div>
+          <div class="div-60"></div>
+          <div class="div-61">
+            <div class="div-62">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68324816c1ab4286c06d588fdc435cddfe525032ae2e048c9faea856bc8dd00?"
+                class="img-19"
+              />
+              <div class="div-63">Back to shopping</div>
+            </div>
+            <div class="div-64">
+              <div class="div-65">Total Price:</div>
+              <div class="div-66">₱20,385.00</div>
+              <div class="div-67">
+                <a href="pay&confirm.html">Check out</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
